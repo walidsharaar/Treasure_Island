@@ -28,13 +28,9 @@ print("Your mission is to find the treasure.")
 
 user_choice = input("You are at a crossroad! do you wanna go Right or Left?\n").lower()
 
-if user_choice == "right":
-    print("You fall into a hole. Game Over!!!")
-elif user_choice == "left":
-    swim_ability = input("Can you swim? Yes or No ").lower()
-    if swim_ability == "no":
-        print("Attacked by trout. Game Over!!!")
-    elif swim_ability == "yes":
+if user_choice =="left":
+    swim_ability = input("you are in middle of lake type Wait or Swim ").lower()
+    if swim_ability == "wait":
         door_selection = input("Which door color are going to select? ").lower()
         if door_selection == "red":
             print("Burned by fire. Game Over!!!")
@@ -44,8 +40,19 @@ elif user_choice == "left":
             print("You win!!!")
         else:
             print("Game Over!!!")
+    else:
+        print("You chose a door that doesn't exist. Game Over!!!")
 else:
-    print(" Game Over!!!")
+    print("You fall into a hole. Game Over!!!")
+
+
+
+
+
+
+
+
+
 
 
 
